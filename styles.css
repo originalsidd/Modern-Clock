@@ -17,10 +17,10 @@ body {
 
 .clock {
 	position: relative;
-	height: 600px;
-	width: 600px;
-	min-height: 600px;
-	min-width: 600px;
+	height: 670px;
+	width: 670px;
+	min-height: 670px;
+	min-width: 670px;
 	background-color: rgba(25, 0, 26, 0.8);
 	border-radius: 50%;
 	border: 6px rgb(247, 0, 255);
@@ -101,4 +101,49 @@ body {
 	width: 10px;
 	height: 25%;
 	background-color: rgba(255, 17, 243, 1);
-	border: 1.5px solid rgb(145, 0, 145);}
+	border: 1.5px solid rgb(145, 0, 145);
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.clock {
+			height: 300px;
+			width: 300px;
+			min-height: 300px;
+			min-width: 300px;
+		}
+	
+		.clock .number {
+			font-size: 1.5rem;
+			padding: 12px;
+		}
+	
+		.clock .bar_item {
+			font-size: 0.5rem;
+			padding: 5px;
+		}
+
+		.clock .hand.sec {
+			width: 2.5px;
+			height: 35%;
+			background-color: rgb(255, 0, 0);
+		}
+
+		.clock .hand.min {
+			width: 6px;
+			height: 35%;
+			background-color: rgba(255, 17, 243, 1);
+			border: 1.5px solid rgb(145, 0, 145);
+		}
+
+		.clock .hand.hr {
+			width: 7px;
+			height: 25%;
+			background-color: rgba(255, 17, 243, 1);
+			border: 1.5px solid rgb(145, 0, 145);
+		}
+}
